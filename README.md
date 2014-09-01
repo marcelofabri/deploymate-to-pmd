@@ -5,7 +5,7 @@ Generates a PMD report from a JSON generated from [**Deploymate**](http://www.de
 
 # Usage
 
-    /Applications/Deploymate.app/Contents/MacOS/Deploymate --cli -t TestTarget TestProject.xcodeproj -o json | python deploymate-to-pmd > deploymate_pmd.xml
+    /Applications/Deploymate.app/Contents/MacOS/Deploymate --cli -t TestTarget TestProject.xcodeproj -o json | python deploymate-to-pmd.py > deploymate_pmd.xml
     
 
 Now you can use `deploymate_pmd.xml` with the [**PMD Plugin**](https://wiki.jenkins-ci.org/display/JENKINS/PMD+Plugin) on [**Jenkins**](http://jenkins-ci.org). Just add a **Publish PMD analysis result** on your post-build actions.
