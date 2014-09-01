@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from sys import stdin
 
 import json
